@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HomeContainer = styled("div")`
   /* height: calc(100vh-10%); */
+  height: 100%;
   background-color: ${(props) => props.theme.background};
   color: ${(props) => props.theme.textWhite};
   display: flex;

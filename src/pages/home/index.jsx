@@ -2,7 +2,8 @@ import { Typewriter } from "react-simple-typewriter";
 import { HomeContainer, LogoFooter } from "./home.styled";
 import { GrLinkedinOption } from "react-icons/gr";
 import { BsGithub } from "react-icons/bs";
-import { FiMail } from "react-icons/fi";
+import { GrSkype } from "react-icons/gr";
+import { SiDiscord } from "react-icons/si";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
           </span>
         </p>
       </main>
+
       <LogoFooter>
         <a href="https://www.linkedin.com/in/gandhiraj97" target="blank">
           <GrLinkedinOption size={18} />
@@ -30,9 +32,12 @@ const Home = () => {
         <a href="https://github.com/Gandhi-Rajendran" target="blank">
           <BsGithub size={18} />
         </a>
-        {/* <a href="mailto:ksrmgandhiraj@gmail.com" target="blank">
-          <FiMail size={18} />
-        </a> */}
+        <a href="skype:live:.cid.a56f008c22110a?chat" target="blank">
+          <GrSkype size={18} />
+        </a>
+        <a href="https://discord.com/channels/Gandhi Raj#5210" target="blank">
+          <SiDiscord size={18} />
+        </a>
       </LogoFooter>
     </HomeContainer>
   );
