@@ -1,5 +1,5 @@
 import { Typewriter } from "react-simple-typewriter";
-import { HomeContainer, LogoFooter } from "./home.styled";
+import { Button, HomeContainer, LogoFooter, Main } from "./home.styled";
 import { GrLinkedinOption } from "react-icons/gr";
 import { BsGithub } from "react-icons/bs";
 import { GrSkype } from "react-icons/gr";
@@ -8,7 +8,7 @@ import { SiDiscord } from "react-icons/si";
 const Home = () => {
   return (
     <HomeContainer id="home">
-      <main>
+      <Main>
         <h1>Gandhi Rajendran</h1>
         <p>
           I'm a{" "}
@@ -23,20 +23,32 @@ const Home = () => {
             />
           </span>
         </p>
-      </main>
-
+        <div>
+          <Button>
+            <a href="#contact">Get in touch</a>
+          </Button>
+          <Button>
+            <a
+              href="https://drive.google.com/file/d/1LuzuBiCuS-C36zq90gh9SRNGMqv5jNGt/view?usp=share_link"
+              target="blank"
+            >
+              Resume
+            </a>
+          </Button>
+        </div>
+      </Main>
       <LogoFooter>
         <a href="https://www.linkedin.com/in/gandhiraj97" target="blank">
-          <GrLinkedinOption size={18} />
+          <GrLinkedinOption />
         </a>
         <a href="https://github.com/Gandhi-Rajendran" target="blank">
-          <BsGithub size={18} />
+          <BsGithub />
         </a>
         <a href="skype:live:.cid.a56f008c22110a?chat" target="blank">
-          <GrSkype size={18} />
+          <GrSkype />
         </a>
         <a href="https://discord.com/channels/Gandhi Raj#5210" target="blank">
-          <SiDiscord size={18} />
+          <SiDiscord />
         </a>
       </LogoFooter>
     </HomeContainer>

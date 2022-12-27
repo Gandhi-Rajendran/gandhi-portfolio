@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import { Nav } from "./navbar.styled";
+import { A, Nav } from "./navbar.styled";
 // import { MdDarkMode } from "react-icons/md";
 // import { BsSun } from "react-icons/bs";
 
@@ -10,10 +10,11 @@ const Navbar = () => {
   // };
   return (
     <Nav>
-      <a href="#home">HOME</a>
-      <a href="#about">ABOUT</a>
-      <a href="#tech-stack">TECH STACK</a>
-      <a href="#contact">CONTACT</a>
+      <A href="#home">HOME</A>
+      <A href="#about">ABOUT</A>
+      <A href="#project">PROJECTS</A>
+      <A href="#tech-stack">TECH STACK</A>
+      <A href="#contact">CONTACT</A>
       {/* <button onClick={modeHandler}>{mode ? <BsSun /> : <MdDarkMode />}</button> */}
     </Nav>
   );

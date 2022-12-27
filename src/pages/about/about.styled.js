@@ -1,32 +1,37 @@
 import styled from "styled-components";
 
-export const AboutContainer = styled("div")`
-  height: 100vh;
+export const AboutContainer = styled.div`
+  height: 100%;
+  padding: 2rem;
+  font-size: 1.5rem;
+  line-height: 2;
   display: flex;
-  font-size: 1.2rem;
+  gap: 3rem;
+  text-align: justify;
   background-color: ${(props) => props.theme.background};
   color: ${(props) => props.theme.textWhite};
-  line-height: 2;
-  section {
+  div {
     width: 50%;
-    padding: 2rem;
   }
   h1 {
     color: ${(props) => props.theme.textSecondary};
-    font-size: 2.2rem;
-    font-weight: 900;
-    padding-bottom: 3rem;
+    font-size: 2.5rem;
   }
-  div {
+
+  /* section {
     display: flex;
     align-items: center;
-    gap: 1rem;
-  }
+    gap: 1.5rem;
+    svg {
+    font-size: 1.5rem;
+    }
+  } */
 `;
-
-export const Icon = styled("span")`
-  color: ${(props) => props.theme.emoji};
-  font-size: 1.5rem;
+export const IconDiv = styled.div`
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  svg {
+    font-size: 2rem;
+  }
 `;
