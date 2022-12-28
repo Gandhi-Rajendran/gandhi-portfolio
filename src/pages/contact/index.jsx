@@ -1,7 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import ContactCard from "../../components/contact-card";
-import { ContactContainer, Footer } from "./contact.styled";
-import { FaFacebookF } from "react-icons/fa";
-import { BsInstagram, BsTwitter } from "react-icons/bs";
+import { A, ContactContainer, Footer } from "./contact.styled";
 
 const Contact = () => {
   return (
@@ -12,15 +16,15 @@ const Contact = () => {
       </main>
       <Footer>
         <div>
-          <a href="http://www.facebook.com/ksrgandhi" target="blank">
-            <FaFacebookF />
-          </a>
-          <a href="http://instagram.com/_u/gandhi_ksr" target="blank">
-            <BsInstagram />
-          </a>
-          <a href="https://twitter.com/Gandhiraj97" target="blank">
-            <BsTwitter />
-          </a>
+          <A href="http://www.facebook.com/ksrgandhi" target="blank">
+            <FontAwesomeIcon icon={faFacebookF} />
+          </A>
+          <A href="http://instagram.com/_u/gandhi_ksr" target="blank">
+            <FontAwesomeIcon icon={faInstagram} />
+          </A>
+          <A href="https://twitter.com/Gandhiraj97" target="blank">
+            <FontAwesomeIcon icon={faTwitter} />
+          </A>
         </div>
         <p>Ⓒ Gandhi Rajendran</p>
       </Footer>

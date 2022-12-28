@@ -12,25 +12,20 @@ export const AboutContainer = styled.div`
   color: ${(props) => props.theme.textWhite};
   div {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
   h1 {
     color: ${(props) => props.theme.textSecondary};
     font-size: 2.5rem;
   }
-
-  /* section {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    svg {
-    font-size: 1.5rem;
-    }
-  } */
 `;
-export const IconDiv = styled.div`
+
+export const Icon = styled.section`
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   svg {
     font-size: 2rem;
   }

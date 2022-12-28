@@ -1,11 +1,12 @@
-import { AboutContainer, IconDiv } from "./about.styled";
-import { AiOutlineCalendar } from "react-icons/ai";
-import { HiOutlineMail } from "react-icons/hi";
-import { MdLocationOn } from "react-icons/md";
-import { FaPhoneAlt, FaLanguage } from "react-icons/fa";
+import { AboutContainer, Icon } from "./about.styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-regular-svg-icons";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faLanguage,
+  faLocationDot,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   return (
@@ -21,27 +22,26 @@ const About = () => {
       </div>
       <div>
         <h1>Basic Information</h1>
-        <IconDiv>
+        <Icon>
           <FontAwesomeIcon icon={faCalendar} />
           09 November, 1997
-        </IconDiv>
-        <IconDiv>
+        </Icon>
+        <Icon>
           <FontAwesomeIcon icon={faEnvelope} />
-          {/* <FontAwesomeIcon icon="fa-solid fa-envelope" /> */}
           ksrmgandhiraj@gmail.com
-        </IconDiv>
-        <IconDiv>
+        </Icon>
+        <Icon>
           <FontAwesomeIcon icon={faPhone} />
           +91-8825790748
-        </IconDiv>
-        <IconDiv>
-          <MdLocationOn />
+        </Icon>
+        <Icon>
+          <FontAwesomeIcon icon={faLocationDot} />
           Chennai, India
-        </IconDiv>
-        <IconDiv>
-          <FaLanguage />
+        </Icon>
+        <Icon>
+          <FontAwesomeIcon icon={faLanguage} />
           Tamil, English
-        </IconDiv>
+        </Icon>
       </div>
     </AboutContainer>
   );

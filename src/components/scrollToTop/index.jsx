@@ -1,4 +1,5 @@
-import { FaLongArrowAltUp } from "react-icons/fa";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ScrollContainer } from "./scrollToTop.styled";
 
 const ScrollToTop = () => {
@@ -15,7 +16,7 @@ const ScrollToTop = () => {
 
   return (
     <ScrollContainer onClick={handleScrollToTop}>
-      <FaLongArrowAltUp />
+      <FontAwesomeIcon icon={faArrowUp} />
     </ScrollContainer>
   );
 };

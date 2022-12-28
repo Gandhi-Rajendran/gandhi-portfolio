@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   ProjectContainer,
   ProjectBody,
@@ -8,11 +9,11 @@ import {
   Details,
   Content,
 } from "./project.styled";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 import personalWebsite from "../../assets/images/personalWebsite.png";
 import eliteNetwork from "../../assets/images/eliteNetwork.png";
 import velzon from "../../assets/images/velzon.png";
-import { BiLinkExternal } from "react-icons/bi";
-import { BsGithub } from "react-icons/bs";
 
 const Project = () => {
   const PROJECT_DATAS = [
@@ -54,7 +55,10 @@ const Project = () => {
       <h1>Projects</h1>
       <ProjectBody>
         {PROJECT_DATAS.map((data) => (
-          <ProjectCard key={data.projectId}>
+          <ProjectCard
+            key={data.projectId}
+            alignSelf={data.projectId % 2 === 0 ? 1 : 0}
+          >
             <img src={data.image} alt={data.alt} />
             <Content>
               <h2>{data.title}</h2>
@@ -67,10 +71,10 @@ const Project = () => {
             <OverLay className="overlay">
               <DIV>
                 <A href={data.viewLink} target="blank" title="View Live">
-                  <BiLinkExternal />
+                  <FontAwesomeIcon icon={faLink} />
                 </A>
                 <A href={data.sourceLink} target="blank" title="View Source">
-                  <BsGithub />
+                  <FontAwesomeIcon icon={faGithub} />
                 </A>
               </DIV>
               <p className="title">{data.title.toLocaleUpperCase()}</p>

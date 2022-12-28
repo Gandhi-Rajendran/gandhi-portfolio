@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { lightTheme } from "./utils/theme";
 import Header from "./components/header";

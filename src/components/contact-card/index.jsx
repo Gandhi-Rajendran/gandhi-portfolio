@@ -1,8 +1,8 @@
-import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { ContactCardContainer } from "./contactCard.styled";
-import { FaPhoneAlt } from "react-icons/fa";
-import { BsWhatsapp } from "react-icons/bs";
-import { HiOutlineMail } from "react-icons/hi";
 import { CardContainer } from "./contactCard.styled";
 
 const ContactCard = () => {
@@ -16,16 +16,16 @@ const ContactCard = () => {
       <CardContainer>
         <div>
           <h3>
-            <FaPhoneAlt />
+            <FontAwesomeIcon icon={faPhone} />
             Call /
-            <BsWhatsapp />
+            <FontAwesomeIcon icon={faWhatsapp} />
             Whatsapp
           </h3>
           <p>+91-8825790748</p>
         </div>
         <div>
           <h3>
-            <HiOutlineMail />
+            <FontAwesomeIcon icon={faEnvelope} />
             Email
           </h3>
           <p>ksrmgandhiraj@gmail.com</p>

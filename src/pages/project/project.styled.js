@@ -17,8 +17,9 @@ export const ProjectContainer = styled.div`
 export const ProjectBody = styled.div`
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 0.25fr);
-  justify-content: space-evenly;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 9%;
 
   /* @media screen and (min-width: 1240px) {
     background-color: green;
@@ -27,15 +28,16 @@ export const ProjectBody = styled.div`
 `;
 
 export const ProjectCard = styled.div`
-  background-color: ${(props) => props.theme.backgroundWhite};
-  color: ${(props) => props.theme.textBlack};
-  border-radius: 0.5rem;
+  /* max-width: 25rem; */
+  height: 90%;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  max-width: 25rem;
-
+  border-radius: 0.5rem;
+  align-self: ${(props) => (props.alignSelf ? "flex-start" : "flex-end")};
+  color: ${(props) => props.theme.textBlack};
+  background-color: ${(props) => props.theme.backgroundWhite};
   img {
     width: 100%;
     height: 40%;

@@ -1,7 +1,7 @@
 // import { useState } from "react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { A, Nav } from "./navbar.styled";
-// import { MdDarkMode } from "react-icons/md";
-// import { BsSun } from "react-icons/bs";
 
 const Navbar = () => {
   // const [mode, setMode] = useState(false);
@@ -15,7 +15,13 @@ const Navbar = () => {
       <A href="#project">PROJECTS</A>
       <A href="#tech-stack">TECH STACK</A>
       <A href="#contact">CONTACT</A>
-      {/* <button onClick={modeHandler}>{mode ? <BsSun /> : <MdDarkMode />}</button> */}
+      {/* <button onClick={modeHandler}>
+        {mode ? (
+          <FontAwesomeIcon icon={faSun} />
+        ) : (
+          <FontAwesomeIcon icon={faMoon} />
+        )}
+      </button> */}
     </Nav>
   );
 };
