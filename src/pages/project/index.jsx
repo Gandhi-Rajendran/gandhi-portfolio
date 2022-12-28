@@ -13,7 +13,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import personalWebsite from "../../assets/images/personalWebsite.png";
 import eliteNetwork from "../../assets/images/eliteNetwork.png";
-import velzon from "../../assets/images/velzon.png";
+import blogger from "../../assets/images/blogger.png";
 
 const Project = () => {
   const PROJECT_DATAS = [
@@ -40,13 +40,13 @@ const Project = () => {
     },
     {
       projectId: 3,
-      image: velzon,
-      alt: "velzon.png",
-      title: "Velzon",
+      image: blogger,
+      alt: "blogger.png",
+      title: "Blogger",
       details: "Simple CRUD operations using JSON server",
-      tech: "ReactJS, Styled Components",
-      viewLink: "https://gandhi-rajendran.github.io/VELZON/",
-      sourceLink: "https://github.com/Gandhi-Rajendran/VELZON",
+      tech: "ReactJS, Styled Components, Render and netlify",
+      viewLink: "https://the-react-blogger.netlify.app/blogs",
+      sourceLink: "https://github.com/Gandhi-Rajendran/blogger",
     },
   ];
 

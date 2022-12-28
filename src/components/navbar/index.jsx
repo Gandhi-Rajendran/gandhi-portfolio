@@ -1,10 +1,10 @@
-// import { useState } from "react";
+import { useState } from "react";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { A, Nav } from "./navbar.styled";
 
 const Navbar = () => {
-  // const [mode, setMode] = useState(false);
+  const [mode, setMode] = useState(false);
   // const modeHandler = () => {
   //   setMode(!mode);
   // };
