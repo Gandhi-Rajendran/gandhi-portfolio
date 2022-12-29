@@ -15,113 +15,51 @@ import sonarQubeLogo from "../../assets/images/sonarQubeLogo.svg";
 const TechStack = () => {
   return (
     <TechStackContainer id="tech-stack">
-      <section>
-        <h1>Tech Stack</h1>
-        <h4>
-          These are the few technologies, languages and frameworks that i grind
-          on a regular basis..
-        </h4>
-      </section>
+      <h1>Tech Stack 🔥</h1>
+      <p>
+        These are the few technologies, languages and frameworks that i grind on
+        a regular basis..
+      </p>
       <Main>
         <div>
-          <img src={htmlLogo} alt="htmlLogo" />
-          <span>HTML 5</span>
+          <img src={htmlLogo} alt="htmlLogo" /> HTML 5
         </div>
         <div>
-          <img src={cssLogo} alt="cssLogo" />
-          <span>CSS 3</span>
+          <img src={cssLogo} alt="cssLogo" /> CSS 3
         </div>
         <div>
-          <img src={javascriptLogo} alt="javascriptLogo" />
-          <span>Javascript</span>
+          <img src={javascriptLogo} alt="javascriptLogo" /> Javascript
         </div>
         <div>
-          <img src={typescriptLogo} alt="typescriptLogo" />
-          <span>Typescript</span>
+          <img src={typescriptLogo} alt="typescriptLogo" /> Typescript
         </div>
         <div>
-          <img src={reactLogo} alt="reactLogo" />
-          <span>React </span>
+          <img src={reactLogo} alt="reactLogo" /> React
         </div>
         <div>
-          <img src={reduxLogo} alt="reduxLogo" />
-          <span>Redux Toolkit</span>
+          <img src={reduxLogo} alt="reduxLogo" /> Redux Toolkit
         </div>
         <div>
-          <img src={reactHookFormLogo} alt="reactHookFormLogo" />
-          <span>React Hook Form</span>
+          <img src={reactHookFormLogo} alt="reactHookFormLogo" /> React Hook
+          Form
         </div>
         <div>
-          <img src={reactQueryLogo} alt="reactQueryLogo" />
-          <span>React Query</span>
+          <img src={reactQueryLogo} alt="reactQueryLogo" /> React Query
         </div>
         <div>
-          <img src={styledComponentsLogo} alt="styledComponentsLogo" />
-          <span>Styled Components</span>
+          <img src={styledComponentsLogo} alt="styledComponentsLogo" /> Styled
+          Components
         </div>
         <div>
-          <img src={sassLogo} alt="sassLogo" />
-          <span>Sass</span>
+          <img src={sassLogo} alt="sassLogo" /> Sass
         </div>
         <div>
-          <img src={githubLogo} alt="githubLogo" />
-          <span>Github</span>
+          <img src={githubLogo} alt="githubLogo" /> Github
         </div>
         <div>
-          <img src={sonarQubeLogo} alt="sonarQubeLogo" />
-          <span>SonarQube</span>
+          <img src={sonarQubeLogo} alt="sonarQubeLogo" /> SonarQube
         </div>
       </Main>
-      {/* <Main>
-        <div>
-          <img src={htmlLogo} alt="htmlLogo" />
-          <span>HTML 5</span>
-        </div>
-        <div>
-          <img src={cssLogo} alt="cssLogo" />
-          <span>CSS 3</span>
-        </div>
-        <div>
-          <img src={javascriptLogo} alt="javascriptLogo" />
-          <span>Javascript</span>
-        </div>
-        <div>
-          <img src={typescriptLogo} alt="typescriptLogo" />
-          <span>Typescript</span>
-        </div>
-        <div>
-          <img src={reactLogo} alt="reactLogo" />
-          <span>React </span>
-        </div>
-        <div>
-          <img src={reduxLogo} alt="reduxLogo" />
-          <span>Redux Toolkit</span>
-        </div>
-        <div>
-          <img src={reactHookFormLogo} alt="reactHookFormLogo" />
-          <span>React Hook Form</span>
-        </div>
-        <div>
-          <img src={reactQueryLogo} alt="reactQueryLogo" />
-          <span>React Query</span>
-        </div>
-        <div>
-          <img src={styledComponentsLogo} alt="styledComponentsLogo" />
-          <span>Styled Components</span>
-        </div>
-        <div>
-          <img src={sassLogo} alt="sassLogo" />
-          <span>Sass</span>
-        </div>
-        <div>
-          <img src={githubLogo} alt="githubLogo" />
-          <span>Github</span>
-        </div>
-        <div>
-          <img src={sonarQubeLogo} alt="sonarQubeLogo" />
-          <span>SonarQube</span>
-        </div>
-      </Main> */}
     </TechStackContainer>
   );
 };

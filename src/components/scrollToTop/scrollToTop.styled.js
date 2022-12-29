@@ -9,11 +9,11 @@ export const ScrollContainer = styled.div`
   bottom: 0;
   right: 0;
   border-radius: 50%;
-  color: ${(props) => props.theme.icon};
+  color: ${(props) => props.theme.iconPrimary};
   background-color: ${(props) => props.theme.iconBackground};
   :hover {
     cursor: pointer;
     color: ${(props) => props.theme.iconBackground};
-    background-color: ${(props) => props.theme.icon};
+    background-color: ${(props) => props.theme.iconPrimary};
   }
 `;

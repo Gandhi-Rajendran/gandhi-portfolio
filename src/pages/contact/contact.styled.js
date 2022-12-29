@@ -2,37 +2,36 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
   height: 100%;
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
   background-color: ${(props) => props.theme.background};
-  h1 {
-    color: ${(props) => props.theme.textSecondary};
-    padding: 1rem;
-  }
-  main {
-    width: 50%;
-    margin: 1rem auto;
-    height: 100%;
-    background-color: red;
-    border-radius: 1rem;
-  }
 `;
 
 export const Footer = styled.footer`
-  padding: 1rem;
+  width: 100%;
+  height: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: ${(props) => props.theme.textGrey};
   background-color: ${(props) => props.theme.backgroundWhite};
-  p {
-    color: ${(props) => props.theme.iconPrimary};
-  }
+`;
+export const Social = styled.div`
+  width: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const A = styled.a`
-  height: 5rem;
-  padding: 1rem;
   font-size: 2rem;
-  color: ${(props) => props.theme.iconPrimary};
+  color: ${(props) => props.theme[props.bgColor]};
   :hover {
-    color: ${(props) => props.theme.iconSecondary};
+    transform: scale(1.5);
   }
 `;

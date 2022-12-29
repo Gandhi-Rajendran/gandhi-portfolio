@@ -42,28 +42,28 @@ const Home = () => {
         <A
           href="https://www.linkedin.com/in/gandhiraj97"
           target="blank"
-          bgColor={`linkedInBackground`}
+          bgColor={`linkedIn`}
         >
           <FontAwesomeIcon icon={faLinkedinIn} />
         </A>
         <A
           href="https://github.com/Gandhi-Rajendran"
           target="blank"
-          bgColor={`githubBackground`}
+          bgColor={`github`}
         >
           <FontAwesomeIcon icon={faGithub} />
         </A>
         <A
           href="skype:live:.cid.a56f008c22110a?chat"
           target="blank"
-          bgColor={`skypeBackground`}
+          bgColor={`skype`}
         >
           <FontAwesomeIcon icon={faSkype} />
         </A>
         <A
           href="https://discord.com/channels/Gandhi Raj#5210"
           target="blank"
-          bgColor={`discordBackground`}
+          bgColor={`discord`}
         >
           <FontAwesomeIcon icon={faDiscord} />
         </A>

@@ -1,4 +1,4 @@
-import { AboutContainer, Icon } from "./about.styled";
+import { AboutContainer, Icon, InfoDiv } from "./about.styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-regular-svg-icons";
 import {
@@ -12,16 +12,20 @@ const About = () => {
   return (
     <AboutContainer id="about">
       <div>
-        <h1>About</h1>
+        <h2>About</h2>
         <p>
-          Hi 👋 I'm <b>Gandhi</b>, Experienced Web application Developer and
-          create successful applications that are Fast, Easy to use, and built
-          with best practices.
+          Hi 👋 I'm <b>Gandhi</b>, Experienced Software Engineer with expertise
+          in versatile technologies involving in Front-end developer and I
+          created successful applications that are Fast, Easy to use, Responsive
+          and built with best practices.
         </p>
-        <p>Constantly Embracing new Techs and</p>
+        <p>
+          Constantly Embracing new Technology and Teach aspiring developers and
+          a work in progress.
+        </p>
       </div>
-      <div>
-        <h1>Basic Information</h1>
+      <InfoDiv>
+        <h2>Basic Information</h2>
         <Icon>
           <FontAwesomeIcon icon={faCalendar} />
           09 November, 1997
@@ -42,7 +46,7 @@ const About = () => {
           <FontAwesomeIcon icon={faLanguage} />
           Tamil, English
         </Icon>
-      </div>
+      </InfoDiv>
     </AboutContainer>
   );
 };

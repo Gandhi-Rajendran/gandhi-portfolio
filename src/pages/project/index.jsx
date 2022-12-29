@@ -34,7 +34,7 @@ const Project = () => {
       title: "Elite Network",
       details:
         "Elite Network Authorization. Authorized user only can logged in. we can register and entered in.",
-      tech: "ReactJS, Styled Components",
+      tech: "ReactJS, Styled Components, React Hook Forms",
       viewLink: "https://gandhi-rajendran.github.io/elite-network/",
       sourceLink: "https://github.com/Gandhi-Rajendran/elite-network",
     },
@@ -44,7 +44,7 @@ const Project = () => {
       alt: "blogger.png",
       title: "Blogger",
       details: "Simple CRUD operations using JSON server",
-      tech: "ReactJS, Styled Components, Render and netlify",
+      tech: "ReactJS, Render and Netlify",
       viewLink: "https://the-react-blogger.netlify.app/blogs",
       sourceLink: "https://github.com/Gandhi-Rajendran/blogger",
     },
@@ -55,10 +55,7 @@ const Project = () => {
       <h1>Projects</h1>
       <ProjectBody>
         {PROJECT_DATAS.map((data) => (
-          <ProjectCard
-            key={data.projectId}
-            alignSelf={data.projectId % 2 === 0 ? 1 : 0}
-          >
+          <ProjectCard key={data.projectId}>
             <img src={data.image} alt={data.alt} />
             <Content>
               <h2>{data.title}</h2>

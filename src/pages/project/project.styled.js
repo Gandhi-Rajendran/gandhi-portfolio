@@ -18,9 +18,9 @@ export const ProjectBody = styled.div`
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  justify-content: center;
-  gap: 9%;
-
+  justify-content: space-around;
+  align-items: center;
+  gap: 5%;
   /* @media screen and (min-width: 1240px) {
     background-color: green;
     grid-template-columns: repeat(3, 25%);
@@ -28,14 +28,12 @@ export const ProjectBody = styled.div`
 `;
 
 export const ProjectCard = styled.div`
-  /* max-width: 25rem; */
-  height: 90%;
+  max-width: 25rem;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
-  align-self: ${(props) => (props.alignSelf ? "flex-start" : "flex-end")};
   color: ${(props) => props.theme.textBlack};
   background-color: ${(props) => props.theme.backgroundWhite};
   img {
@@ -75,10 +73,9 @@ export const OverLay = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  /* top: 0%; */
   top: -100%;
   backdrop-filter: blur(0.1rem);
-  background-color: ${(props) => props.theme.backgroundOverlay};
+  background-color: ${(props) => props.theme.overlay};
   transition: 0.6s ease-in-out;
   p {
     font-size: 1.5rem;

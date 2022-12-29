@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HomeContainer = styled.div`
   height: 100%;
   padding: 2rem;
-  font-size: 1.5rem;
+  /* font-size: 0.5rem; */
   display: flex;
   flex-direction: column;
   align-items: Center;
@@ -22,15 +22,19 @@ export const Main = styled.main`
     font-size: 3rem;
     letter-spacing: 0.2rem;
   }
-  span {
-    color: ${(props) => props.theme.textTypeWriter};
+  p {
+    font-size: 1.5rem;
+    span {
+      font-weight: 600;
+      color: ${(props) => props.theme.textTypewriter};
+    }
   }
 `;
 
 export const Button = styled.button`
   margin-right: 0.8rem;
-  font-size: 1rem;
-  padding: 0.8rem 1.5rem;
+  /* font-size: 1rem; */
+  padding: 0.6rem 1.2rem;
   border-radius: 0.3rem;
   border: none;
   background-color: ${(props) => props.theme.backgroundPrimary};
@@ -46,18 +50,17 @@ export const LogoFooter = styled.footer`
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  /* font-size: 1.5rem; */
 `;
 
 export const A = styled.a`
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 50%;
-  color: ${(props) => props.theme.icon};
+  color: ${(props) => props.theme.iconPrimary};
   background-color: ${(props) => props.theme.iconBackground};
   position: relative;
   :hover {
-    font-size: 2rem;
-    top: -15%;
+    font-size: 1.3rem;
+    top: -10%;
     transform: scale(1.1);
     background-color: ${(props) => props.theme[props.bgColor]};
   }

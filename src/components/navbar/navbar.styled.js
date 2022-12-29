@@ -16,23 +16,22 @@ export const A = styled.a`
   color: ${(props) => props.theme.textWhite};
   display: inline-block;
   position: relative;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin: 0 1rem;
   &::after {
     content: "";
     position: absolute;
     width: 100%;
+    height: 0.15rem;
     transform: scaleX(0);
-    height: 0.2rem;
     bottom: 0;
     left: 0;
-    background-color: ${(props) => props.theme.textWhite};
     transform-origin: bottom right;
     transition: transform 0.5s ease;
-    margin-bottom: -0.2rem;
+    margin-bottom: -0.25rem;
+    background-color: ${(props) => props.theme.textWhite};
   }
   &:hover::after {
-    margin-bottom: -0.2rem;
     transform: scaleX(1);
     transform-origin: bottom left;
   }
