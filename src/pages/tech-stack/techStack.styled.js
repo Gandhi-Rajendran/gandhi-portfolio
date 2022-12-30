@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const TechStackContainer = styled.div`
   height: 100%;
   padding: 1rem;
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -26,7 +27,7 @@ export const Main = styled.main`
     align-items: center;
     gap: 1rem;
     img {
-      width: 30%;
+      width: 25%;
     }
   }
 

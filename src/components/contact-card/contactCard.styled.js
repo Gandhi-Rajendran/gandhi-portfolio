@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ContactCardContainer = styled.div`
-  max-width: 50rem;
-  width: 50%;
+  /* max-width: 50rem; */
+  width: 40%;
   height: 100%;
   padding: 1rem 2rem;
   border-radius: 1rem;
@@ -10,7 +10,7 @@ export const ContactCardContainer = styled.div`
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
-  font-size: 1.3rem;
+  font-size: 1rem;
   background-color: #fffff7;
   color: ${(props) => props.theme.textBlack};
 
@@ -27,7 +27,7 @@ export const ContactCardContainer = styled.div`
 
 export const H1 = styled.h1`
   color: ${(props) => props.theme.textSecondary};
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 800;
   margin: 0 auto;
 `;
@@ -39,8 +39,19 @@ export const ContactDiv = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    span {
+      vertical-align: center;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      color: ${(prop) => prop.theme[prop.color]};
+    }
     svg {
       font-size: 1.5rem;
     }
   }
+`;
+
+export const Span = styled.span`
+  color: ${(prop) => prop.theme[prop.color]};
 `;

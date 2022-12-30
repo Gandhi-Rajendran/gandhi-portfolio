@@ -5,12 +5,11 @@ import {
   OverLay,
   ProjectCard,
   DIV,
-  A,
-  Details,
   Content,
+  Section,
 } from "./project.styled";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import personalWebsite from "../../assets/images/personalWebsite.png";
 import eliteNetwork from "../../assets/images/eliteNetwork.png";
 import blogger from "../../assets/images/blogger.png";
@@ -22,7 +21,7 @@ const Project = () => {
       image: personalWebsite,
       alt: "personalWebsite.png",
       title: "Personal Website",
-      details: "Personal Portfolio website",
+      details: "A Elegant Portfolio to enhance my personal traits and skill",
       tech: "ReactJS, Styled Components",
       viewLink: "#home",
       sourceLink: "https://github.com/Gandhi-Rajendran/gandhi-Website",
@@ -59,7 +58,7 @@ const Project = () => {
             <img src={data.image} alt={data.alt} />
             <Content>
               <h2>{data.title}</h2>
-              <Details>{data.details}</Details>
+              <p>{data.details}</p>
               <p>
                 <b>Tech : </b>
                 {data.tech}
@@ -67,12 +66,18 @@ const Project = () => {
             </Content>
             <OverLay className="overlay">
               <DIV>
-                <A href={data.viewLink} target="blank" title="View Live">
-                  <FontAwesomeIcon icon={faLink} />
-                </A>
-                <A href={data.sourceLink} target="blank" title="View Source">
-                  <FontAwesomeIcon icon={faGithub} />
-                </A>
+                <Section>
+                  <a href={data.viewLink} target="blank" title="View Live">
+                    <FontAwesomeIcon icon={faRocket} />
+                  </a>
+                  <span>View</span>
+                </Section>
+                <Section>
+                  <a href={data.sourceLink} target="blank" title="View Source">
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                  <span>Source</span>
+                </Section>
               </DIV>
               <p className="title">{data.title.toLocaleUpperCase()}</p>
             </OverLay>

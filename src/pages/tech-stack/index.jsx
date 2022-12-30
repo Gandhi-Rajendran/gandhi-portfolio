@@ -15,7 +15,7 @@ import sonarQubeLogo from "../../assets/images/sonarQubeLogo.svg";
 const TechStack = () => {
   return (
     <TechStackContainer id="tech-stack">
-      <h1>Tech Stack 🔥</h1>
+      <h1>Tech Stack</h1>
       <p>
         These are the few technologies, languages and frameworks that i grind on
         a regular basis..

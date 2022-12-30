@@ -4,4 +4,9 @@
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   text-decoration: none;
+
+  /* To Prevent Text Selection */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }

@@ -8,7 +8,12 @@ import {
   faUserTie,
 } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { ContactCardContainer, ContactDiv, H1 } from "./contactCard.styled";
+import {
+  ContactCardContainer,
+  ContactDiv,
+  H1,
+  Span,
+} from "./contactCard.styled";
 
 const ContactCard = () => {
   return (
@@ -31,14 +36,23 @@ const ContactCard = () => {
       <ContactDiv>
         <section>
           <span>
-            <FontAwesomeIcon icon={faPhone} /> Call /{" "}
-            <FontAwesomeIcon icon={faWhatsapp} /> Whatsapp
+            <Span color={"call"}>
+              <FontAwesomeIcon icon={faPhone} />
+            </Span>
+            Call /
+            <Span color={"whatsapp"}>
+              <FontAwesomeIcon icon={faWhatsapp} />
+            </Span>
+            Whatsapp
           </span>
           <p>+91-8825790748</p>
         </section>
         <section>
           <span>
-            <FontAwesomeIcon icon={faEnvelope} /> Email
+            <Span color={"email"}>
+              <FontAwesomeIcon icon={faEnvelope} />
+            </Span>
+            Email
           </span>
           <p>ksrmgandhiraj@gmail.com</p>
         </section>

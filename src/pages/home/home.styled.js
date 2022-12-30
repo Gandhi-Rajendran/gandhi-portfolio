@@ -42,6 +42,7 @@ export const Button = styled.button`
   :hover {
     opacity: 0.7;
     cursor: pointer;
+    transform: scale(0.95);
   }
 `;
 

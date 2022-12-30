@@ -9,26 +9,22 @@ export const ProjectContainer = styled.div`
   gap: 3rem;
   color: ${(props) => props.theme.textSecondary};
   background-color: ${(props) => props.theme.background};
-  h1 {
-    font-size: 2.5rem;
-  }
 `;
 
 export const ProjectBody = styled.div`
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: space-around;
-  align-items: center;
-  gap: 5%;
-  /* @media screen and (min-width: 1240px) {
-    background-color: green;
-    grid-template-columns: repeat(3, 25%);
-  } */
+  display: flex;
+  justify-content: center;
+  gap: 6%;
+  padding: 0 5%;
+
+  @media (width > 1368px) {
+    height: 75%;
+  }
 `;
 
 export const ProjectCard = styled.div`
-  max-width: 25rem;
+  /* height: 90%; */
   position: relative;
   overflow: hidden;
   display: flex;
@@ -37,11 +33,8 @@ export const ProjectCard = styled.div`
   color: ${(props) => props.theme.textBlack};
   background-color: ${(props) => props.theme.backgroundWhite};
   img {
-    width: 100%;
-    height: 40%;
-    object-fit: fill;
+    height: 100%;
   }
-
   :hover {
     cursor: pointer;
     .overlay {
@@ -51,17 +44,15 @@ export const ProjectCard = styled.div`
 `;
 
 export const Content = styled.div`
+  height: 100%;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   justify-content: space-between;
-  h2 {
-    font-size: 2rem;
+  /* background-color: ${(props) => props.theme.backgroundPrimary}; */
+  p {
+    text-align: justify;
   }
-`;
-export const Details = styled.p`
-  font-size: 1.2rem;
 `;
 
 export const OverLay = styled.div`
@@ -73,33 +64,37 @@ export const OverLay = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  top: -100%;
+  top: -150%;
   backdrop-filter: blur(0.1rem);
   background-color: ${(props) => props.theme.overlay};
   transition: 0.6s ease-in-out;
   p {
+    padding: 1rem;
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 1rem;
-    align-self: flex-start;
   }
 `;
 
 export const DIV = styled.div`
   flex-grow: 1;
-  width: inherit;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 `;
-export const A = styled.a`
-  font-size: 3rem;
-  color: ${(props) => props.theme.text};
+
+export const Section = styled.section`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 1.5rem;
+  a {
+    font-size: 3rem;
+    color: ${(props) => props.theme.text};
+  }
   :hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 `;
