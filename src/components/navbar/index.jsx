@@ -1,27 +1,40 @@
-import { useState } from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
-import { A, Nav } from "./navbar.styled";
+// import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+// import { faMoon, faSun } from "@fortawesome/free-soLid-svg-icons";
+import { Nav, Li } from "./navbar.styled";
 
-const Navbar = () => {
-  const [mode, setMode] = useState(false);
+const Navbar = (props) => {
+  const { isSideNav, onSideNavHandler } = props;
+  // const [mode, setMode] = useState(false);
   // const modeHandler = () => {
   //   setMode(!mode);
   // };
+
   return (
-    <Nav>
-      <A href="#home">HOME</A>
-      <A href="#about">ABOUT</A>
-      <A href="#project">PROJECTS</A>
-      <A href="#tech-stack">TECH STACK</A>
-      <A href="#contact">CONTACT</A>
-      {/* <button onClick={modeHandler}>
+    <Nav className="Navbar" isSideNav={isSideNav}>
+      <Li onClick={onSideNavHandler}>
+        <a href="#home">HOME</a>
+      </Li>
+      <Li onClick={onSideNavHandler}>
+        <a href="#about">ABOUT</a>
+      </Li>
+      <Li onClick={onSideNavHandler}>
+        <a href="#project">PROJECTS</a>
+      </Li>
+      <Li onClick={onSideNavHandler}>
+        <a href="#tech-stack">TECH STACK</a>
+      </Li>
+      <Li onClick={onSideNavHandler}>
+        <a href="#contact">CONTACT</a>
+      </Li>
+      {/* <button onCLick={modeHandler}>
         {mode ? (
           <FontAwesomeIcon icon={faSun} />
-        ) : (
-          <FontAwesomeIcon icon={faMoon} />
-        )}
-      </button> */}
+          ) : (
+            <FontAwesomeIcon icon={faMoon} />
+            )}
+          </button> */}
     </Nav>
   );
 };

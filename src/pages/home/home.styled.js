@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   height: 100%;
+  /* min-height: 90vh; */
   padding: 2rem;
-  /* font-size: 0.5rem; */
   display: flex;
   flex-direction: column;
   align-items: Center;
+  justify-content: center;
   color: ${(props) => props.theme.textWhite};
   background-color: ${(props) => props.theme.background};
 `;
@@ -20,7 +21,6 @@ export const Main = styled.main`
   gap: 1rem;
   h1 {
     font-size: 3rem;
-    letter-spacing: 0.2rem;
   }
   p {
     font-size: 1.5rem;
@@ -33,7 +33,6 @@ export const Main = styled.main`
 
 export const Button = styled.button`
   margin-right: 0.8rem;
-  /* font-size: 1rem; */
   padding: 0.6rem 1.2rem;
   border-radius: 0.3rem;
   border: none;

@@ -4,9 +4,11 @@ export const LayoutContainer = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: none;
 `;
+
 export const Container = styled.div`
-  height: 90%;
+  min-height: 90vh;
   overflow-y: overlay;
   scroll-behavior: smooth;
 

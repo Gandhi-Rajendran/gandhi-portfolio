@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
   height: 100%;
+  min-height: 90vh;
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -9,6 +10,10 @@ export const ContactContainer = styled.div`
   align-items: center;
   gap: 1.5rem;
   background-color: ${(props) => props.theme.background};
+
+  @media (max-width: 1024px) {
+    height: auto;
+  }
 `;
 
 export const Footer = styled.footer`

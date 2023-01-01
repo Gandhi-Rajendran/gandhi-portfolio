@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const TechStackContainer = styled.div`
   height: 100%;
+  min-height: 90vh;
   padding: 1rem;
   font-size: 1.2rem;
   display: flex;
@@ -12,6 +13,9 @@ export const TechStackContainer = styled.div`
   color: ${(props) => props.theme.textWhite};
   h1 {
     color: ${(props) => props.theme.textSecondary};
+  }
+  @media (max-width: 1024px) {
+    height: auto;
   }
 `;
 
