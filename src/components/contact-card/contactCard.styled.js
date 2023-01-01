@@ -1,33 +1,44 @@
 import styled from "styled-components";
 
 export const ContactCardContainer = styled.div`
-  /* max-width: 50rem; */
-  width: 40%;
-  height: 100%;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
+  /* margin: clamp(0.8rem, 2vw, 2rem); */
+  margin: 3%;
+  /* padding: 1.5rem; */
+  padding: clamp(1rem, 1.2vw, 1.5rem);
+  font-size: clamp(0.8rem, 1.2vw, 2rem);
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  /* gap: clamp(1rem, 5vw, 2.5rem); */
   text-align: left;
-  font-size: 1rem;
-  background-color: #fffff7;
+  border-radius: 1rem;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(50%, 50%); */
   color: ${(props) => props.theme.textBlack};
+  background-color: ${(props) => props.theme.backgroundWhite};
+  background-color: limegreen;
 
+  @media (min-width: 1440px) {
+    margin: auto;
+    flex-grow: 0;
+    gap: 3rem;
+  }
   p {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: clamp(1rem, 1vw, 2rem);
     svg {
-      width: 3rem; // for alignment
-      font-size: 2rem;
+      width: clamp(1.5rem, 1vw, 3rem); // for alignment
+      font-size: clamp(1rem, 2vw, 5rem);
     }
   }
 `;
 
 export const H1 = styled.h1`
   color: ${(props) => props.theme.textSecondary};
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2vw, 3rem);
   font-weight: 800;
   margin: 0 auto;
 `;
@@ -35,10 +46,16 @@ export const H1 = styled.h1`
 export const ContactDiv = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 425px) {
+    flex-direction: column;
+    gap: clamp(0.8rem, 1vw, 1rem);
+  }
+
   section {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: clamp(0.6rem, 1vw, 1.2rem);
+
     span {
       vertical-align: center;
       display: flex;
@@ -47,7 +64,7 @@ export const ContactDiv = styled.div`
       color: ${(prop) => prop.theme[prop.color]};
     }
     svg {
-      font-size: 1.5rem;
+      font-size: clamp(1rem, 1.5vw, 2rem);
     }
   }
 `;
