@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   height: 100%;
   padding: clamp(1rem, 2vw, 5%) clamp(5%, 1vw, 10%);
-  font-size: clamp(0.8rem, 1.5vw, 2rem);
+  font-size: clamp(1.2rem, 1.5vw, 2rem);
   line-height: 1.75;
   display: flex;
   gap: 10%;
@@ -14,7 +14,7 @@ export const AboutContainer = styled.div`
   div {
     display: flex;
     flex-direction: column;
-    gap: clamp(0.5rem, 1.5vw, 2rem);
+    gap: clamp(1.5rem, 1.5vw, 2rem);
   }
 
   h2 {
@@ -23,7 +23,7 @@ export const AboutContainer = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 5%;
     height: auto;
   }
 `;
