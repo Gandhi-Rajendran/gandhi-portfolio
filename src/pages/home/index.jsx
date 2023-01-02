@@ -31,7 +31,7 @@ const Home = () => {
             <Button>Get in touch</Button>
           </a>
           <a
-            href="https://drive.google.com/file/d/1LuzuBiCuS-C36zq90gh9SRNGMqv5jNGt/view?usp=share_link"
+            href="https://drive.google.com/file/d/1LuzuBiCuS-C36zq90gh9SRNGMqv5jNGt/view?usp=sharing"
             target="blank"
           >
             <Button>Resume</Button>
