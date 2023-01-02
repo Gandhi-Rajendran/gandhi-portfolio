@@ -13,7 +13,7 @@ export const Container = styled.div`
   scroll-behavior: smooth;
 
   ::-webkit-scrollbar {
-    width: 0.8rem;
+    width: clamp(0.4rem, 1vw, 0.8rem);
   }
   ::-webkit-scrollbar-thumb {
     border-radius: 50rem;

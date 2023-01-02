@@ -6,7 +6,14 @@ import {
   faLinkedinIn,
   faSkype,
 } from "@fortawesome/free-brands-svg-icons";
-import { A, Button, HomeContainer, LogoFooter, Main } from "./home.styled";
+import {
+  A,
+  Button,
+  ButtonDiv,
+  HomeContainer,
+  LogoFooter,
+  Main,
+} from "./home.styled";
 
 const Home = () => {
   return (
@@ -26,17 +33,17 @@ const Home = () => {
             />
           </span>
         </p>
-        <div>
+        <ButtonDiv>
           <a href="#contact">
             <Button>Get in touch</Button>
           </a>
           <a
-            href="https://drive.google.com/file/d/1LuzuBiCuS-C36zq90gh9SRNGMqv5jNGt/view?usp=share_link"
+            href="https://drive.google.com/file/d/1LuzuBiCuS-C36zq90gh9SRNGMqv5jNGt/view?usp=sharing"
             target="blank"
           >
             <Button>Resume</Button>
           </a>
-        </div>
+        </ButtonDiv>
       </Main>
       <LogoFooter>
         <A
