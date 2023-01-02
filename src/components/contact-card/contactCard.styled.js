@@ -3,22 +3,16 @@ import styled from "styled-components";
 export const ContactCardContainer = styled.div`
   /* margin: clamp(0.8rem, 2vw, 2rem); */
   margin: 3%;
-  /* padding: 1.5rem; */
   padding: clamp(1rem, 1.2vw, 1.5rem);
   font-size: clamp(0.8rem, 1.2vw, 2rem);
   display: flex;
   flex-grow: 1;
   flex-direction: column;
   justify-content: space-between;
-  /* gap: clamp(1rem, 5vw, 2.5rem); */
   text-align: left;
   border-radius: 1rem;
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(50%, 50%); */
   color: ${(props) => props.theme.textBlack};
   background-color: ${(props) => props.theme.backgroundWhite};
-  background-color: limegreen;
 
   @media (min-width: 1440px) {
     margin: auto;
@@ -31,7 +25,7 @@ export const ContactCardContainer = styled.div`
     gap: clamp(1rem, 1vw, 2rem);
     svg {
       width: clamp(1.5rem, 1vw, 3rem); // for alignment
-      font-size: clamp(1rem, 2vw, 5rem);
+      font-size: clamp(1rem, 2vw, 3rem);
     }
   }
 `;
