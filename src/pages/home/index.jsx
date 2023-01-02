@@ -6,7 +6,14 @@ import {
   faLinkedinIn,
   faSkype,
 } from "@fortawesome/free-brands-svg-icons";
-import { A, Button, HomeContainer, LogoFooter, Main } from "./home.styled";
+import {
+  A,
+  Button,
+  ButtonDiv,
+  HomeContainer,
+  LogoFooter,
+  Main,
+} from "./home.styled";
 
 const Home = () => {
   return (
@@ -26,7 +33,7 @@ const Home = () => {
             />
           </span>
         </p>
-        <div>
+        <ButtonDiv>
           <a href="#contact">
             <Button>Get in touch</Button>
           </a>
@@ -36,7 +43,7 @@ const Home = () => {
           >
             <Button>Resume</Button>
           </a>
-        </div>
+        </ButtonDiv>
       </Main>
       <LogoFooter>
         <A

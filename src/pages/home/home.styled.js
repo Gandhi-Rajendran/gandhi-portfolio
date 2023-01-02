@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   height: 100%;
-  /* min-height: 90vh; */
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -10,6 +9,14 @@ export const HomeContainer = styled.div`
   justify-content: center;
   color: ${(props) => props.theme.textWhite};
   background-color: ${(props) => props.theme.background};
+
+  @media (max-width: 480px) {
+    text-align: center;
+    background-color: limegreen;
+    /* margin: 1rem; */
+    padding: 1rem;
+    /* padding: 0; */
+  }
 `;
 
 export const Main = styled.main`
@@ -24,6 +31,10 @@ export const Main = styled.main`
   }
   p {
     font-size: 1.5rem;
+    @media (max-width: 480px) {
+      font-size: clamp(1.5rem, 1vw, 1.5rem);
+    }
+
     span {
       font-weight: 600;
       color: ${(props) => props.theme.textTypewriter};
@@ -31,11 +42,15 @@ export const Main = styled.main`
   }
 `;
 
+export const ButtonDiv = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
 export const Button = styled.button`
-  margin-right: 0.8rem;
   padding: 0.6rem 1.2rem;
   border-radius: 0.3rem;
   border: none;
+  font-size: 1rem;
   background-color: ${(props) => props.theme.backgroundPrimary};
   color: ${(props) => props.theme.textWhite};
   :hover {
@@ -55,11 +70,11 @@ export const LogoFooter = styled.footer`
 export const A = styled.a`
   padding: 1.5rem;
   border-radius: 50%;
+  font-size: clamp(1.3rem, 1.5vw, 1.5rem);
   color: ${(props) => props.theme.iconPrimary};
   background-color: ${(props) => props.theme.iconBackground};
   position: relative;
   :hover {
-    font-size: 1.3rem;
     top: -10%;
     transform: scale(1.1);
     background-color: ${(props) => props.theme[props.bgColor]};
