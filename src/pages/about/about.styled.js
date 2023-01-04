@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   min-height: 90vh;
   padding: 2% 10%;
-  font-size: clamp(1rem, 1.25vw, 2rem);
+  font-size: clamp(1.25rem, 1.25vw, 2rem);
   line-height: 1.75;
   display: flex;
   gap: 10%;
@@ -29,7 +29,7 @@ export const AboutContainer = styled.div`
   }
 
   h2 {
-    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-size: clamp(2rem, 2vw, 3rem);
     color: ${(props) => props.theme.textSecondary};
   }
 `;

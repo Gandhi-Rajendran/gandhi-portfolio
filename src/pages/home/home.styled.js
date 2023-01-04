@@ -21,7 +21,7 @@ export const Main = styled.main`
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   h1 {
     font-size: 3rem;
     @media (max-width: 375px) {
@@ -77,9 +77,9 @@ export const LogoFooter = styled.footer`
 `;
 
 export const A = styled.a`
-  padding: clamp(1.5rem, 1vw, 2rem);
+  padding: clamp(1.5rem, 1.5vw, 2.5rem);
   border-radius: 50%;
-  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  font-size: clamp(1.2rem, 1.5vw, 2rem);
   color: ${(props) => props.theme.iconPrimary};
   background-color: ${(props) => props.theme.iconBackground};
   position: relative;
