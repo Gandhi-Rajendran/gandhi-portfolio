@@ -6,25 +6,27 @@ export const Nav = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: none;
 
   /* --------- SIDE NAVBAR --------- */
   @media (max-width: 768px) {
     width: 100%;
-    height: calc(100% - 64px);
-    padding: 2rem;
-    display: ${(props) => (props.isSideNav ? "flex" : "none")};
+    min-width: 0;
+    padding: 1.5rem;
+    /* display: ${(props) => (props.isSideNav ? "flex" : "none")}; */
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
     gap: 8%;
     position: absolute;
     z-index: 3;
-    top: 4rem;
+    top: 10%;
+    bottom: 0;
     right: 0;
-    transform: ${(props) =>
-      props.isSideNav ? `translateX(0)` : "translateX(100vw)"};
+    right: ${(props) => (props.isSideNav ? `0` : "-100%")};
     background-color: ${(props) => props.theme.overlay};
-    transition: 5s transform;
+    transition: all 0.3s;
   }
 
   button {

@@ -5,17 +5,13 @@ export const HomeContainer = styled.div`
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: Center;
+  text-align: center;
   justify-content: center;
   color: ${(props) => props.theme.textWhite};
   background-color: ${(props) => props.theme.background};
 
   @media (max-width: 480px) {
-    text-align: center;
-    background-color: limegreen;
-    /* margin: 1rem; */
     padding: 1rem;
-    /* padding: 0; */
   }
 `;
 
@@ -27,12 +23,12 @@ export const Main = styled.main`
   align-items: center;
   gap: 1rem;
   h1 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3rem);
   }
   p {
     font-size: 1.5rem;
     @media (max-width: 480px) {
-      font-size: clamp(1.5rem, 1vw, 1.5rem);
+      font-size: clamp(1rem, 1vw, 1.5rem);
     }
 
     span {
@@ -50,7 +46,7 @@ export const Button = styled.button`
   padding: 0.6rem 1.2rem;
   border-radius: 0.3rem;
   border: none;
-  font-size: 1rem;
+  font-size: 0.8rem;
   background-color: ${(props) => props.theme.backgroundPrimary};
   color: ${(props) => props.theme.textWhite};
   :hover {
@@ -68,9 +64,9 @@ export const LogoFooter = styled.footer`
 `;
 
 export const A = styled.a`
-  padding: 1.5rem;
+  padding: clamp(1.5rem, 1vw, 2rem);
   border-radius: 50%;
-  font-size: clamp(1.3rem, 1.5vw, 1.5rem);
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
   color: ${(props) => props.theme.iconPrimary};
   background-color: ${(props) => props.theme.iconBackground};
   position: relative;
