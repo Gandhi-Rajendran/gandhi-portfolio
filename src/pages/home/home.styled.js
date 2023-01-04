@@ -5,13 +5,12 @@ export const HomeContainer = styled.div`
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: Center;
+  text-align: center;
   justify-content: center;
   color: ${(props) => props.theme.textWhite};
   background-color: ${(props) => props.theme.background};
 
   @media (max-width: 480px) {
-    text-align: center;
     padding: 1rem;
   }
 `;
@@ -65,9 +64,9 @@ export const LogoFooter = styled.footer`
 `;
 
 export const A = styled.a`
-  padding: 1.5rem;
+  padding: clamp(1.5rem, 1vw, 2rem);
   border-radius: 50%;
-  font-size: clamp(1.3rem, 1.5vw, 1.5rem);
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
   color: ${(props) => props.theme.iconPrimary};
   background-color: ${(props) => props.theme.iconBackground};
   position: relative;
