@@ -1,30 +1,35 @@
 import styled from "styled-components";
 
 export const ProjectContainer = styled.div`
-  height: 100%;
-  padding: 2rem;
+  padding: clamp(1rem, 5.5vw, 2rem);
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: clamp(1rem, 1.5vw, 2rem);
   color: ${(props) => props.theme.textSecondary};
   background-color: ${(props) => props.theme.background};
+
+  h1 {
+    font-size: clamp(2rem, 2.5vw, 3rem);
+  }
 `;
 
 export const ProjectBody = styled.div`
-  height: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 6%;
-  padding: 0 5%;
+  gap: clamp(1.5rem, 2vw, 2rem);
 
-  @media (width > 1368px) {
-    height: 75%;
+  @media (max-width: 375px) {
+    gap: 1rem;
   }
 `;
 
 export const ProjectCard = styled.div`
-  /* height: 90%; */
+  width: 25%;
+  min-width: 22.7rem;
+  max-width: 28rem;
+  height: 32rem;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -32,6 +37,16 @@ export const ProjectCard = styled.div`
   border-radius: 0.5rem;
   color: ${(props) => props.theme.textBlack};
   background-color: ${(props) => props.theme.backgroundWhite};
+
+  @media (max-width: 1200px) {
+    height: 28rem;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    min-width: 15rem;
+  }
+
   img {
     height: 100%;
   }
@@ -45,13 +60,17 @@ export const ProjectCard = styled.div`
 
 export const Content = styled.div`
   height: 100%;
-  padding: 1.5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* background-color: ${(props) => props.theme.backgroundPrimary}; */
+  /* color: white; */
+  /* background-color: #171717; */
+  h2 {
+    font-size: 1.8rem;
+  }
   p {
-    text-align: justify;
+    font-size: clamp(1.1rem, 1.3vw, 1.5rem);
   }
 `;
 
@@ -64,7 +83,7 @@ export const OverLay = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  top: -150%;
+  top: -100%;
   backdrop-filter: blur(0.1rem);
   background-color: ${(props) => props.theme.overlay};
   transition: 0.6s ease-in-out;

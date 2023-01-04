@@ -77,12 +77,17 @@ export const LogoFooter = styled.footer`
 `;
 
 export const A = styled.a`
-  padding: clamp(1.5rem, 1.5vw, 2.5rem);
+  padding: clamp(2rem, 1.5vw, 2.5rem);
   border-radius: 50%;
-  font-size: clamp(1.2rem, 1.5vw, 2rem);
+  font-size: clamp(1.5rem, 1.5vw, 2rem);
   color: ${(props) => props.theme.iconPrimary};
   background-color: ${(props) => props.theme.iconBackground};
   position: relative;
+
+  @media (max-width: 375px) {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
   :hover {
     top: -10%;
     transform: scale(1.1);
