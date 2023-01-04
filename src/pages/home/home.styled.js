@@ -23,12 +23,15 @@ export const Main = styled.main`
   align-items: center;
   gap: 1rem;
   h1 {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: 3rem;
+    @media (max-width: 375px) {
+      font-size: 2rem;
+    }
   }
   p {
-    font-size: 1.5rem;
-    @media (max-width: 480px) {
-      font-size: clamp(1rem, 1vw, 1.5rem);
+    font-size: 1.8rem;
+    @media (max-width: 375px) {
+      font-size: 1.1rem;
     }
 
     span {
@@ -40,15 +43,25 @@ export const Main = styled.main`
 
 export const ButtonDiv = styled.div`
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+  @media (max-width: 375px) {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
 `;
-export const Button = styled.button`
-  padding: 0.6rem 1.2rem;
+
+export const AnchorButton = styled.button`
+  padding: 0.8rem 1.2rem;
   border-radius: 0.3rem;
   border: none;
-  font-size: 0.8rem;
-  background-color: ${(props) => props.theme.backgroundPrimary};
+  font-size: 1.2rem;
   color: ${(props) => props.theme.textWhite};
+  background-color: ${(props) => props.theme.backgroundPrimary};
+
+  @media (max-width: 375px) {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
   :hover {
     opacity: 0.7;
     cursor: pointer;
