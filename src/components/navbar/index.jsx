@@ -1,6 +1,6 @@
 // import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faXmark } from "@fortawesome/free-solid-svg-icons";
 // import { faMoon, faSun } from "@fortawesome/free-soLid-svg-icons";
 import { Nav, Li } from "./navbar.styled";
 

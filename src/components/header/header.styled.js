@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-  height: 10vh;
-  /* min-height: 4rem; */
+  height: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
   background-color: ${(props) => props.theme.backgroundPrimary};
-  padding: 1rem;
+  padding: 0 1.5rem;
 `;
 
 export const Tab = styled.div`

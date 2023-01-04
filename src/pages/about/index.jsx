@@ -1,4 +1,4 @@
-import { AboutContainer, Icon, InfoDiv } from "./about.styled";
+import { AboutContainer, Icon, Info } from "./about.styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-regular-svg-icons";
 import {
@@ -24,7 +24,7 @@ const About = () => {
           a work in progress.
         </p>
       </div>
-      <InfoDiv>
+      <Info>
         <h2>Basic Information</h2>
         <Icon>
           <FontAwesomeIcon icon={faCalendar} />
@@ -46,7 +46,7 @@ const About = () => {
           <FontAwesomeIcon icon={faLanguage} />
           Tamil, English
         </Icon>
-      </InfoDiv>
+      </Info>
     </AboutContainer>
   );
 };

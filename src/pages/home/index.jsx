@@ -68,7 +68,7 @@ const Home = () => {
           <FontAwesomeIcon icon={faSkype} />
         </A>
         <A
-          href="https://discord.com/channels/Gandhi Raj#5210"
+          href="https://discord.com/channels/GandhiRaj#5210"
           target="blank"
           bgColor={`discord`}
         >
