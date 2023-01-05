@@ -9,7 +9,6 @@ export const LayoutContainer = styled.div`
 
 export const Container = styled.div`
   min-height: 90vh;
-  overflow-x: none;
   overflow-y: overlay;
   scroll-behavior: smooth;
 
