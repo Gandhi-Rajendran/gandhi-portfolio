@@ -50,11 +50,11 @@ export const ButtonDiv = styled.div`
   }
 `;
 
-export const AnchorButton = styled.button`
+export const AnchorButton = styled.a`
   padding: 0.8rem 1.2rem;
   border-radius: 0.3rem;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: ${(props) => props.theme.textWhite};
   background-color: ${(props) => props.theme.backgroundPrimary};
 
@@ -77,9 +77,9 @@ export const LogoFooter = styled.footer`
 `;
 
 export const A = styled.a`
-  padding: clamp(2rem, 1.5vw, 2.5rem);
+  padding: clamp(1.8rem, 1.5vw, 2.5rem);
   border-radius: 50%;
-  font-size: clamp(1.5rem, 1.5vw, 2rem);
+  font-size: clamp(1.4rem, 1.5vw, 2rem);
   color: ${(props) => props.theme.iconPrimary};
   background-color: ${(props) => props.theme.iconBackground};
   position: relative;
