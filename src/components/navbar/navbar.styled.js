@@ -12,7 +12,9 @@ export const Nav = styled.ul`
     min-width: 0;
     width: 100%;
     padding: 1.5rem;
-    display: flex;
+    height: 90%;
+    overflow: scroll;
+    display: ${(props) => (props.isSideNav ? "flex" : "none")};
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
@@ -22,7 +24,6 @@ export const Nav = styled.ul`
     top: 10%;
     bottom: 0;
     right: 0;
-    opacity: ${(props) => (props.isSideNav ? "1" : "0")};
     background-color: ${(props) => props.theme.overlay};
     transition: all 0.5s ease-in-out;
   }
