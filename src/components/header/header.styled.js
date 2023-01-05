@@ -13,7 +13,7 @@ export const Tab = styled.div`
   display: none;
   color: ${(props) => props.theme.textWhite};
   svg {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   :hover {
     cursor: pointer;

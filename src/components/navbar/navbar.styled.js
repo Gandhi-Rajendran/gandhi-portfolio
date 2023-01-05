@@ -6,15 +6,13 @@ export const Nav = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow: none;
 
   /* --------- SIDE NAVBAR --------- */
   @media (max-width: 768px) {
-    width: 100%;
     min-width: 0;
+    width: 100%;
     padding: 1.5rem;
-    display: ${(props) => (props.isSideNav ? "flex" : "none")};
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
@@ -24,9 +22,9 @@ export const Nav = styled.ul`
     top: 10%;
     bottom: 0;
     right: 0;
-    right: ${(props) => (props.isSideNav ? `0` : "-100%")};
+    opacity: ${(props) => (props.isSideNav ? "1" : "0")};
     background-color: ${(props) => props.theme.overlay};
-    transition: all 0.3s;
+    transition: all 0.5s ease-in-out;
   }
 
   button {
