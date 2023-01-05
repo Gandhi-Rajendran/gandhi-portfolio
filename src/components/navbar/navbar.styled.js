@@ -13,7 +13,6 @@ export const Nav = styled.ul`
     width: 100%;
     padding: 1.5rem;
     height: 90%;
-    overflow: scroll;
     display: ${(props) => (props.isSideNav ? "flex" : "none")};
     flex-direction: column;
     align-items: flex-end;
