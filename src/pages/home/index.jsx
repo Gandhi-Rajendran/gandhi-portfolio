@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {
   A,
+  AnchorButton,
   Button,
   ButtonDiv,
   HomeContainer,
@@ -34,15 +35,13 @@ const Home = () => {
           </span>
         </p>
         <ButtonDiv>
-          <a href="#contact">
-            <Button>Get in touch</Button>
-          </a>
-          <a
+          <AnchorButton href="#contact">Get in touch</AnchorButton>
+          <AnchorButton
             href="https://drive.google.com/file/d/1LuzuBiCuS-C36zq90gh9SRNGMqv5jNGt/view?usp=sharing"
             target="blank"
           >
-            <Button>Resume</Button>
-          </a>
+            Resume
+          </AnchorButton>
         </ButtonDiv>
       </Main>
       <LogoFooter>

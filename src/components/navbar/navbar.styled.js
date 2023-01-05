@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Nav = styled.ul`
   width: 30%;
-  min-width: 25rem;
+  min-width: 30rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,8 +13,8 @@ export const Nav = styled.ul`
     width: 100%;
     min-width: 0;
     padding: 1.5rem;
-    /* display: ${(props) => (props.isSideNav ? "flex" : "none")}; */
-    display: flex;
+    display: ${(props) => (props.isSideNav ? "flex" : "none")};
+    /* display: flex; */
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
@@ -42,7 +42,8 @@ export const Nav = styled.ul`
 export const Li = styled.li`
   list-style-type: none;
   color: ${(props) => props.theme.textWhite};
-  font-size: 0.8rem;
+  font-size: clamp(1rem, 1vw, 1.25rem);
+
   a {
     display: inline-block;
     position: relative;

@@ -33,7 +33,7 @@ const Project = () => {
       title: "Elite Network",
       details:
         "Elite Network Authorization. Authorized user only can logged in. we can register and entered in.",
-      tech: "ReactJS, Styled Components, React Hook Forms",
+      tech: "ReactJS, Redux-toolkit, Mui, Styled Components, React Hook Forms",
       viewLink: "https://gandhi-rajendran.github.io/elite-network/",
       sourceLink: "https://github.com/Gandhi-Rajendran/elite-network",
     },
