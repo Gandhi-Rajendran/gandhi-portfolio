@@ -15,8 +15,14 @@ export const AboutContainer = styled.div`
     height: auto;
     min-height: 0;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
     padding: 4%;
+  }
+
+  @media (max-width: 480px) {
+    font-size: clamp(1rem, 4.5vw, 1.25rem);
+    gap: clamp(1rem, 10vw, 2rem);
+    /* gap: 0; */
   }
 
   div {
@@ -31,6 +37,10 @@ export const AboutContainer = styled.div`
   h2 {
     font-size: clamp(2rem, 2vw, 3rem);
     color: ${(props) => props.theme.textSecondary};
+
+    @media (max-width: 375px) {
+      font-size: 1.6rem;
+    }
   }
 `;
 

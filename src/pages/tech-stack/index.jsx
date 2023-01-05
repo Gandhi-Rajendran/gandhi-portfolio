@@ -11,6 +11,9 @@ import sassLogo from "../../assets/images/sassLogo.svg";
 import styledComponentsLogo from "../../assets/images/styledComponentsLogo.png";
 import githubLogo from "../../assets/images/githubLogo.svg";
 import sonarQubeLogo from "../../assets/images/sonarQubeLogo.svg";
+import muiLogo from "../../assets/images/muiLogo.svg";
+import netlifyLogo from "../../assets/images/netlifyLogo.svg";
+import firebaseLogo from "../../assets/images/firebaseLogo.svg";
 
 const TechStack = () => {
   return (
@@ -47,6 +50,9 @@ const TechStack = () => {
           <img src={reactQueryLogo} alt="reactQueryLogo" /> React Query
         </div>
         <div>
+          <img src={muiLogo} alt="muiLogo" /> MUI
+        </div>
+        <div>
           <img src={styledComponentsLogo} alt="styledComponentsLogo" /> Styled
           Components
         </div>
@@ -55,6 +61,12 @@ const TechStack = () => {
         </div>
         <div>
           <img src={githubLogo} alt="githubLogo" /> Github
+        </div>
+        <div>
+          <img src={netlifyLogo} alt="netlifyLogo" /> Netlify
+        </div>
+        <div>
+          <img src={firebaseLogo} alt="firebaseLogo" /> Firebase
         </div>
         <div>
           <img src={sonarQubeLogo} alt="sonarQubeLogo" /> SonarQube
